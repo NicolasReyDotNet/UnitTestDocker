@@ -1,0 +1,28 @@
+services:
+  web:
+    build:
+      context: C:\Users\Marion et Nicolas\source\repos\web
+      dockerfile: web/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: web
+    ports:
+    - target: 80
+  web-tests:
+    build:
+      context: C:\Users\Marion et Nicolas\source\repos\web
+      dockerfile: web/Dockerfile
+      target: test
+    entrypoint:
+    - dotnet
+    - test
+    - --logger
+    - trx;LogFileName=/tests/test-results.xml
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: web-tests
+    ports:
+    - target: 80
+    volumes:
+    - C:\Users\Marion et Nicolas\source\repos\web\tests-results:/tests:rw
+version: '3.4'

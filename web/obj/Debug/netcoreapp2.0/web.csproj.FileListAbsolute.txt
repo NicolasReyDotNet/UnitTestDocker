@@ -1,0 +1,11 @@
+C:\Users\Marion et Nicolas\source\repos\web\web\bin\Debug\netcoreapp2.0\web.deps.json
+C:\Users\Marion et Nicolas\source\repos\web\web\bin\Debug\netcoreapp2.0\web.runtimeconfig.json
+C:\Users\Marion et Nicolas\source\repos\web\web\bin\Debug\netcoreapp2.0\web.runtimeconfig.dev.json
+C:\Users\Marion et Nicolas\source\repos\web\web\bin\Debug\netcoreapp2.0\web.dll
+C:\Users\Marion et Nicolas\source\repos\web\web\bin\Debug\netcoreapp2.0\web.pdb
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.csprojResolveAssemblyReference.cache
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.csproj.CoreCompileInputs.cache
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.AssemblyInfoInputs.cache
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.AssemblyInfo.cs
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.dll
+C:\Users\Marion et Nicolas\source\repos\web\web\obj\Debug\netcoreapp2.0\web.pdb

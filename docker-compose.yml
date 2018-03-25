@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  web:
+    image: web
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+  web-tests:
+    image: web-tests
+    build:
+      context: .
+      dockerfile: web/Dockerfile      
+      target: test
+    volumes: 
+      - ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests

@@ -1,0 +1,14 @@
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\web.test.deps.json
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\web.test.runtimeconfig.json
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\web.test.runtimeconfig.dev.json
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\web.test.dll
+C:\Users\Marion et Nicolas\source\repos\web\web.test\bin\Debug\netcoreapp2.0\web.test.pdb
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.csprojResolveAssemblyReference.cache
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.csproj.CoreCompileInputs.cache
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.AssemblyInfoInputs.cache
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.AssemblyInfo.cs
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.dll
+C:\Users\Marion et Nicolas\source\repos\web\web.test\obj\Debug\netcoreapp2.0\web.test.pdb
