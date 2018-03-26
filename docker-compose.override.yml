@@ -8,7 +8,6 @@ services:
   web-tests:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - VSTS_WORK=/var/vsts
     ports:
       - "80"
     entrypoint:
