@@ -17,6 +17,8 @@ services:
 #  volumes:
 #    - 'myshare:/shared'
     volumes: 
-      - ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests
+      #- ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests
+      - test:/test
+
 volumes:
   test:
