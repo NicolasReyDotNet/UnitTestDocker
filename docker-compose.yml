@@ -5,11 +5,18 @@ services:
     build:
       context: .
       dockerfile: web/Dockerfile
+#  volumes:
+#    - 'myshare:/shared'
+
   web-tests:
     image: web-tests
     build:
       context: .
       dockerfile: web/Dockerfile      
       target: test
+#  volumes:
+#    - 'myshare:/shared'
     volumes: 
       - ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests
+volumes:
+  test:

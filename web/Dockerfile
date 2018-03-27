@@ -16,6 +16,8 @@ FROM build as test
 WORKDIR /src/web.test
 RUN dotnet test
 
+RUN docker cp test:tests-results/test-results.xml /tmp/tmp.test-results.xml
+
 FROM build AS publish
 WORKDIR /src/web
 RUN dotnet publish -c Release -o /app
