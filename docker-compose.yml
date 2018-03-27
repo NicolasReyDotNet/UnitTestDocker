@@ -12,5 +12,4 @@ services:
       dockerfile: web/Dockerfile      
       target: test
     volumes: 
-      #- ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests
-      tests:/tests 
+      - ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests-results/}:/tests
