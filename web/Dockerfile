@@ -1,27 +1,20 @@
-FROM microsoft/aspnetcore:2.0 AS base
+FROM microsoft/aspnetcore-build:2.0 AS build-env
 WORKDIR /app
-EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.0 AS build
-WORKDIR /src 
-COPY web.sln ./
-COPY web/web.csproj web/
-COPY web.test/web.test.csproj web.test/
-RUN dotnet restore -nowarn:msb3202,nu1503
-COPY . .
-WORKDIR /src/web
-RUN dotnet build -c Release -o /app
+#this caching proj files that was here in the first place was causing confusion 
+# amongst us non-galaxy meme brain
+COPY . ./
+# since the test project relies on the api project, we get the api restore "free" here.
+RUN dotnet restore ./web.test/web.test.csproj
+#this step will result in a build failure if the tests do not pass
+RUN dotnet test ./web.test/web.test.csproj --no-restore > ./web.test/results.xml
 
-FROM build as test
-WORKDIR /src/web.test
-RUN dotnet test
+RUN dotnet publish ./web/web.csproj -c Release -o ../out
+#now that there's an output directory, we ought to copy the test results out there.
+RUN cp ./web.test/results.xml ./out
 
-RUN docker cp test:tests-results/test-results.xml /test/test-results.xml
-
-FROM build AS publish
-WORKDIR /src/web
-RUN dotnet publish -c Release -o /app
-FROM base AS final
+# Build runtime image
+FROM microsoft/aspnetcore:2.0
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "web.dll"]
