@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestRun id="b2289221-d41f-4a3a-b56e-28774572871a" name="@9f128b40d195 2018-03-25 15:53:56" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2018-03-25T15:53:56.9364959+00:00" queuing="2018-03-25T15:53:56.9365040+00:00" start="2018-03-25T15:53:54.5828622+00:00" finish="2018-03-25T15:53:56.9585364+00:00" />
-  <TestSettings name="default" id="edbc314d-4b65-48d6-be24-fa5490ad4479">
-    <Deployment runDeploymentRoot="_9f128b40d195_2018-03-25_15_53_56" />
+<TestRun id="d3acb2ed-dd31-40db-ab32-9e19afc981ca" name="@6d9f4d346f4a 2018-03-26 12:09:14" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2018-03-26T12:09:14.3470591+00:00" queuing="2018-03-26T12:09:14.3470690+00:00" start="2018-03-26T12:09:11.8386703+00:00" finish="2018-03-26T12:09:14.3692631+00:00" />
+  <TestSettings name="default" id="a93e1c0c-7dcf-4113-ad60-955e011071cb">
+    <Deployment runDeploymentRoot="_6d9f4d346f4a_2018-03-26_12_09_14" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="8812cb15-7501-4383-987d-95d77c0634a8" testId="7b8717b9-3b7f-4736-a255-a1790160c5d3" testName="web.test.UnitTest1.Test1" computerName="9f128b40d195" duration="00:00:00.0070000" startTime="2018-03-25T15:53:56.7023876+00:00" endTime="2018-03-25T15:53:56.7023904+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8812cb15-7501-4383-987d-95d77c0634a8" />
+    <UnitTestResult executionId="5c2ab538-07b4-4a9f-90fb-0b64e7201ce2" testId="3ea42cc5-2e31-4e70-acbf-ccf3f67a23ca" testName="web.test.UnitTest1.Test1" computerName="6d9f4d346f4a" duration="00:00:00.0080000" startTime="2018-03-26T12:09:14.0687193+00:00" endTime="2018-03-26T12:09:14.0687225+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c2ab538-07b4-4a9f-90fb-0b64e7201ce2" />
   </Results>
   <TestDefinitions>
-    <UnitTest name="web.test.UnitTest1.Test1" storage="/src/web.test/bin/debug/netcoreapp2.0/web.test.dll" id="7b8717b9-3b7f-4736-a255-a1790160c5d3">
-      <Execution id="8812cb15-7501-4383-987d-95d77c0634a8" />
+    <UnitTest name="web.test.UnitTest1.Test1" storage="/src/web.test/bin/debug/netcoreapp2.0/web.test.dll" id="3ea42cc5-2e31-4e70-acbf-ccf3f67a23ca">
+      <Execution id="5c2ab538-07b4-4a9f-90fb-0b64e7201ce2" />
       <TestMethod codeBase="/src/web.test/bin/Debug/netcoreapp2.0/web.test.dll" executorUriOfAdapter="executor://xunit/VsTestRunner2/netcoreapp" className="web.test.UnitTest1" name="web.test.UnitTest1.Test1" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="7b8717b9-3b7f-4736-a255-a1790160c5d3" executionId="8812cb15-7501-4383-987d-95d77c0634a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ea42cc5-2e31-4e70-acbf-ccf3f67a23ca" executionId="5c2ab538-07b4-4a9f-90fb-0b64e7201ce2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -23,7 +23,7 @@
   <ResultSummary outcome="Completed">
     <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
-      <StdOut>[xUnit.net 00:00:00.4673296]   Discovering: web.test[xUnit.net 00:00:00.5365541]   Discovered:  web.test[xUnit.net 00:00:00.5464940]   Starting:    web.test[xUnit.net 00:00:00.6976424]   Finished:    web.test</StdOut>
+      <StdOut>[xUnit.net 00:00:00.5222210]   Discovering: web.test[xUnit.net 00:00:00.6024487]   Discovered:  web.test[xUnit.net 00:00:00.6103118]   Starting:    web.test[xUnit.net 00:00:00.7813111]   Finished:    web.test</StdOut>
     </Output>
   </ResultSummary>
 </TestRun>
