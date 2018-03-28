@@ -19,6 +19,7 @@ RUN dotnet test
 FROM build AS publish
 WORKDIR /src/web
 RUN dotnet publish -c Release -o /app
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .

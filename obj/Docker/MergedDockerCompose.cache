@@ -24,5 +24,7 @@ services:
     ports:
     - target: 80
     volumes:
-    - C:\Users\Marion et Nicolas\source\repos\web\tests-results:/tests:rw
+    - test:/test:rw
 version: '3.4'
+volumes:
+  test: {}
