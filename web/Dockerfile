@@ -12,9 +12,9 @@ COPY . .
 WORKDIR /src/web
 RUN dotnet build -c Release -o /app
 
-FROM build as test
-WORKDIR /src/web.test
-RUN dotnet test
+#FROM build as test
+#WORKDIR /src/web.test
+#RUN dotnet test
 
 FROM build AS publish
 WORKDIR /src/web
