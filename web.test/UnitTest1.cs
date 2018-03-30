@@ -10,6 +10,7 @@ namespace web.test
         public void Test1()
         {
             Assert.NotEmpty(new List<string> { "test" });
+            Assert.IsType<string>(5);
         }
     }
 }
